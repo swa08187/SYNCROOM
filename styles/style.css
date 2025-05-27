@@ -1,0 +1,866 @@
+:root {
+	--main-bg-color: #E4E3E3;
+	--primary-color: #fed136;
+	--white-color: #ffffff;
+	--black-color: #000000;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--chakra-fontSizes-xs: 0.75rem;
+	--chakra-fontSizes-sm: 0.875rem;
+	--chakra-fontSizes-md: 1rem;
+	--chakra-fontSizes-lg: 1.125rem;
+	--chakra-fontSizes-xl: 1.25rem;
+	--chakra-fontSizes-2xl: 1.5rem;
+	--chakra-fontSizes-3xl: 1.875rem;
+	--chakra-fontSizes-4xl: 2.25rem;
+	--chakra-fontSizes-5xl: 3rem;
+	--chakra-fontSizes-6xl: 3.75rem;
+	--chakra-fontSizes-7xl: 4.5rem;
+	--chakra-fontSizes-8xl: 6rem;
+	--chakra-fontSizes-9xl: 8rem;
+	--chakra-letterSpacings-tighter: -0.05em;
+	--chakra-letterSpacings-tight: -0.025em;
+	--chakra-letterSpacings-normal: 0;
+	--chakra-letterSpacings-wide: 0.025em;
+	--chakra-letterSpacings-wider: 0.05em;
+	--chakra-letterSpacings-widest: 0.1em;
+	--chakra-lineHeights-3: 0.75rem;
+	--chakra-lineHeights-4: 1rem;
+	--chakra-lineHeights-5: 1.25rem;
+	--chakra-lineHeights-6: 1.5rem;
+	--chakra-lineHeights-7: 1.75rem;
+	--chakra-lineHeights-8: 2rem;
+	--chakra-lineHeights-9: 2.25rem;
+	--chakra-lineHeights-10: 2.5rem;
+	--chakra-lineHeights-normal: normal;
+	--chakra-lineHeights-none: 1;
+	--chakra-lineHeights-shorter: 1.25;
+	--chakra-lineHeights-short: 1.375;
+	--chakra-lineHeights-base: 1.5;
+	--chakra-lineHeights-tall: 1.625;
+	--chakra-lineHeights-taller: 2;
+	--chakra-radii-none: 0;
+	--chakra-radii-sm: 0.125rem;
+	--chakra-radii-base: 0.25rem;
+	--chakra-radii-md: 0.375rem;
+	--chakra-radii-lg: 0.5rem;
+	--chakra-radii-xl: 0.75rem;
+	--chakra-radii-2xl: 1rem;
+	--chakra-radii-3xl: 1.5rem;
+	--chakra-radii-full: 9999px;
+	--chakra-space-1: 0.25rem;
+	--chakra-space-2: 0.5rem;
+	--chakra-space-3: 0.75rem;
+	--chakra-space-4: 1rem;
+	--chakra-space-5: 1.25rem;
+	--chakra-space-6: 1.5rem;
+	--chakra-space-7: 1.75rem;
+	--chakra-space-8: 2rem;
+	--chakra-space-9: 2.25rem;
+	--chakra-space-10: 2.5rem;
+	--chakra-space-12: 3rem;
+	--chakra-space-14: 3.5rem;
+	--chakra-space-16: 4rem;
+	--chakra-space-20: 5rem;
+	--chakra-space-24: 6rem;
+	--chakra-space-28: 7rem;
+	--chakra-space-32: 8rem;
+	--chakra-space-36: 9rem;
+	--chakra-space-40: 10rem;
+	--chakra-space-44: 11rem;
+	--chakra-space-48: 12rem;
+	--chakra-space-52: 13rem;
+	--chakra-space-56: 14rem;
+	--chakra-space-60: 15rem;
+	--chakra-space-64: 16rem;
+	--chakra-space-72: 18rem;
+	--chakra-space-80: 20rem;
+	--chakra-space-96: 24rem;
+	--chakra-space-px: 1px;
+	--chakra-space-0-5: 0.125rem;
+	--chakra-space-1-5: 0.375rem;
+	--chakra-space-2-5: 0.625rem;
+	--chakra-space-3-5: 0.875rem;
+	--chakra-sizes-1: 0.25rem;
+	--chakra-sizes-2: 0.5rem;
+	--chakra-sizes-3: 0.75rem;
+	--chakra-sizes-4: 1rem;
+	--chakra-sizes-5: 1.25rem;
+	--chakra-sizes-6: 1.5rem;
+	--chakra-sizes-7: 1.75rem;
+	--chakra-sizes-8: 2rem;
+	--chakra-sizes-9: 2.25rem;
+	--chakra-sizes-10: 2.5rem;
+	--chakra-sizes-12: 3rem;
+	--chakra-sizes-14: 3.5rem;
+	--chakra-sizes-16: 4rem;
+	--chakra-sizes-20: 5rem;
+	--chakra-sizes-24: 6rem;
+	--chakra-sizes-28: 7rem;
+	--chakra-sizes-32: 8rem;
+	--chakra-sizes-36: 9rem;
+	--chakra-sizes-40: 10rem;
+	--chakra-sizes-44: 11rem;
+	--chakra-sizes-48: 12rem;
+	--chakra-sizes-52: 13rem;
+	--chakra-sizes-56: 14rem;
+	--chakra-sizes-60: 15rem;
+	--chakra-sizes-64: 16rem;
+	--chakra-sizes-72: 18rem;
+	--chakra-sizes-80: 20rem;
+	--chakra-sizes-96: 24rem;
+	--chakra-sizes-px: 1px;
+	--chakra-sizes-0-5: 0.125rem;
+	--chakra-sizes-1-5: 0.375rem;
+	--chakra-sizes-2-5: 0.625rem;
+	--chakra-sizes-3-5: 0.875rem;
+	--chakra-sizes-max: max-content;
+	--chakra-sizes-min: min-content;
+	--chakra-sizes-full: 100%;
+	--chakra-sizes-3xs: 14rem;
+	--chakra-sizes-2xs: 16rem;
+	--chakra-sizes-xs: 20rem;
+	--chakra-sizes-sm: 24rem;
+	--chakra-sizes-md: 28rem;
+	--chakra-sizes-lg: 32rem;
+	--chakra-sizes-xl: 36rem;
+	--chakra-sizes-2xl: 42rem;
+	--chakra-sizes-3xl: 48rem;
+	--chakra-sizes-4xl: 56rem;
+	--chakra-sizes-5xl: 64rem;
+	--chakra-sizes-6xl: 72rem;
+	--chakra-sizes-7xl: 80rem;
+	--chakra-sizes-8xl: 90rem;
+	--chakra-sizes-container-sm: 640px;
+	--chakra-sizes-container-md: 768px;
+	--chakra-sizes-container-lg: 1024px;
+	--chakra-sizes-container-xl: 1280px;
+}
+
+
+/****************************************       Defaults       */
+img {
+	border-style: none;
+}
+img, video {
+	height: auto;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+	display: block;
+}
+button, input, optgroup, select, textarea {
+	padding: 0px;
+	line-height: inherit;
+	color: inherit;
+}
+button, input {
+	overflow: visible;
+}
+button, input, optgroup, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0px;
+}
+*, ::before, ::after {
+	border-width: 0px;
+	border-style: solid;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background-color: var(--body-background);
+	height: 100vh; 
+	width: 100vw;
+}
+
+
+
+
+
+
+/****************************************       Base      */
+html {
+	font-size: 10px; 
+	font-family: var(--font-sans);
+	background-color: var(--main-bg-color);
+	text-size-adjust: 100%;
+	/* --vh: 722px; */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	background-color: var(--body-background);
+}
+html::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
+}
+html, html.darkmode {		/* 배경화면을 그라디언트로 할 때 */
+	height:					auto !important;			/* 높이가 무조건 자동으로 늘어나도록 설정 */
+}
+@media screen and (max-width: 1020px) {
+	html {
+		font-size: 12px;
+	}
+}
+.base {
+	width: 100%;
+    height: 100%;
+    overflow: inherit;
+}
+@media screen and (max-width: 1020px) {
+	.base {
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+	}
+}
+
+
+/****************************************       Headings      */
+h1, h2, h3, h4, h5, h6 
+{
+  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 2em;
+  margin: 0;
+}
+
+
+/****************************************       Texts       */
+p
+{
+	letter-spacing: var(--chakra-letterSpacings-wide);
+	margin: var(--chakra-space-0-5);
+	font-family: 'Pretendard-ExtraLight';
+}
+ul {
+	display: flex;
+	flex-direction: column;
+	list-style: disc outside;
+	margin: 0 0 24px;
+	padding: var(--chakra-space-2);
+}
+li 
+{
+	margin: var(--chakra-space-0-5);
+	margin-bottom: 1rem;
+	font-family: 'Pretendard-ExtraLight';
+	text-align: left;
+}
+
+/****************************************       Format Strings  */
+formatted-string.sidebar-header-text {
+	font-family: 'GmarketSansMedium';
+	font-size: var(--chakra-fontSizes-5xl);
+	color: white;
+}
+formatted-string.introduction-text {
+	color: white;
+    font-family: 'Pretendard-Light';
+    font-size: var(--chakra-fontSizes-2xl);
+    line-height: 2.2rem;
+    word-break: keep-all;
+    letter-spacing: var(--chakra-letterSpacings-wider);
+}
+formatted-string.random-list-title {
+	color: white;
+}
+formatted-string.main-list-title {
+	color: white;
+}
+formatted-string.category-text {
+	font-family: 'Pretendard-semiBold';
+	font-size: var(--chakra-fontSizes-3xl);
+	margin: 0 12px;
+	white-space: nowrap;
+}
+formatted-string.sort-text {
+	font-family: 'Pretendard-Regular';
+	font-size: var(--chakra-fontSizes-xl);
+	margin: 0 12px;
+	white-space: nowrap;
+}
+formatted-string.genre-text {
+	font-family: 'Pretendard-Regular';
+	font-size: var(--chakra-fontSizes-xl);
+	margin: 3px 12px;
+}
+
+
+@media screen and (max-width: 1020px) { 
+	formatted-string.category-text {
+		font-family: 'Pretendard-semiBold';
+		font-size: var(--chakra-fontSizes-md);
+		margin: 0 6px;
+		white-space: nowrap;
+	}
+	formatted-string.sort-text {
+		font-family: 'Pretendard-Regular';
+		font-size: var(--chakra-fontSizes-xs);
+		margin: 0 5px;
+		white-space: nowrap;
+	}
+	formatted-string.genre-text {
+		font-family: 'Pretendard-Regular';
+		font-size: var(--chakra-fontSizes-sm);
+		margin: 3px 6px;
+	}
+}
+
+
+/****************************************       Buttons         */
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	min-width: 32px;
+	color: #030303;
+	--yt-endpoint-hover-color: #030303;
+	background: var(--item-background);
+	color: #fff;
+	border-radius: 8px;
+	border: none;
+	height: 36px;
+	margin: var(--chakra-space-1-5);
+}
+button:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+.clickable {
+	cursor: pointer;
+}
+@media screen and (max-width: 1020px) { 
+	button {
+		height: 24px;
+	}
+}
+
+/****************************************       Button Class     */
+.category-button {
+	line-height: var(--chakra-lineHeights-tall);
+	margin: var(--chakra-space-1-5);
+}
+.genre-button {
+	margin: var(--chakra-space-1-5);
+	height: auto;
+}
+.sort-button {
+	margin: 0;
+	background: none;
+}
+
+/****************************************       Button Selected     */
+.button-selected {
+	color: black;
+	background: white;
+}
+.button-selected:hover {
+	color: black;
+	background: white;
+}
+
+/****************************************       Button Wrapper     */
+.category-select {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.genre-select {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.sort-select {
+	display: flex;
+	border-radius: var(--chakra-radii-2xl);
+	background: rgba(255,255,255,0.1);
+	color: #fff;
+	margin: 0 var(--chakra-space-2);
+}
+
+
+
+.nav-head {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+.nav {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-button {
+	display: inline-flex;
+	appearance: none;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	user-select: none;
+	position: relative;
+	white-space: nowrap;
+	vertical-align: middle;
+	outline: transparent solid 2px;
+	outline-offset: 2px;
+	width: auto;
+	line-height: 1.2;
+	border-radius: var(--chakra-radii-md);
+	font-weight: 900;
+	height: var(--chakra-sizes-10);
+	min-width: var(--chakra-sizes-10);
+	font-size: var(--chakra-fontSizes-lg);
+	padding-inline-start: var(--chakra-space-4);
+	padding-inline-end: var(--chakra-space-4);
+	border-width: 1px;
+	border-style: solid;
+	border-image: initial;
+	color: inherit;
+	padding: 0px;
+}
+i#menu-icon {
+	font-size: 1.5rem;
+	color: black;
+}
+
+
+#toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    padding: 15px 20px;
+    transform: translate(-50%, 10px);
+    border-radius: 30px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s, transform .5s;
+    background: rgba(255, 255, 255, 0.815);
+    color: #000000;
+    z-index: 10000;
+	font-family: 'Pretendard-semiBold';
+	font-size: var(--chakra-fontSizes-2xl);
+}
+
+#toast.reveal {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0)
+}
+
+/****************************************       Sidebar       */
+.sidebar-wrapper {
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+.sidebar {
+	width: var(--chakra-sizes-md);
+	height: var(--chakra-sizes-full);
+	background: var(--item-background);
+	color: aliceblue;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding-bottom: 5px;
+	transform: translateX(0px);
+	transition: transform 0.5s cubic-bezier(.9,-0.3,.1,1.3);
+}
+@media screen and (max-width: 1020px) { 
+	.sidebar-wrapper {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transition-property: opacity;
+		z-index: 5;
+		opacity: 1;
+		background: var(--app-drawer-scrim-background, rgba(0, 0, 0, 0.5));			
+	}
+	.sidebar-wrapper-hide {
+		top: unset;
+		right: unset;
+		bottom: unset;
+		left: unset;
+	}
+	.sidebar {
+		margin-top: var(--chakra-sizes-20);
+	}
+	.sidebar-hide {
+		/*display: block !important;*/
+		transform: translateX(calc(-1rem - var(--chakra-sizes-md)));
+	}
+}
+.sidebar-header {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	justify-content: space-evenly;
+	height: var(--chakra-sizes-60);
+	margin: var(--chakra-space-8);
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+@media screen and (max-width: 1020px) { 
+	.sidebar-header-content {
+		display: none;
+	}
+}
+#profile-pic {
+	border-radius: 50rem;
+	width: 20rem;
+	aspect-ratio: 1;
+	background-image: var(--profile-img);
+	background-size: cover;
+}
+.introduction {
+    padding: 2rem;
+    /* margin: 4rem; */
+}
+
+
+
+/****************************************       Random music     */
+.random-music-list {
+	display: flex; 
+	flex-flow: row wrap; 
+	-webkit-box-pack: center; 
+	justify-content: center;
+	padding: var(--chakra-space-4);
+}
+.random-list {
+    margin: var(--chakra-space-4) 0;
+}
+.radom-list-header {
+	margin: 0 var(--chakra-space-2);
+}
+.random-song {
+	background: #202020; 
+	color: white;
+    width: calc( ( var(--ytmusic-content-width) / 6) - 2 * 0.5rem );	margin: var(--chakra-space-2);
+	box-shadow: var(--chakra-shadows-sm);
+	border-radius: var( --chakra-radii-lg);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+@media screen and (max-width: 1020px) { 
+	.random-song {
+		width: calc( ( var(--ytmusic-content-width) / 3) - 2 * 0.5rem );
+	}
+}
+.random-cover-div {
+	position: relative; 
+	margin: var(--chakra-space-2);
+	width: calc(100% - 2 * var(--chakra-space-2));
+	aspect-ratio: 1;
+}
+.random-cover-img {
+	border-radius: var( --chakra-radii-lg);
+	object-fit: cover;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.random-info-div {
+	padding: 0 var(--chakra-space-2) 1rem;
+	width: 100%;
+}
+.random-song-name {
+	font-family: 'Pretendard-semiBold';
+	font-size: var(--chakra-fontSizes-3xl);
+	letter-spacing: var(--chakra-letterSpacings-wide);
+	display: flex;
+	-webkit-box-pack: justify;
+	place-content: center space-between;
+	margin-top: var(--chakra-space-1);
+	min-height: 50%;
+	font-weight: var(--chakra-fontWeights-semibold);
+	word-break: break-word;
+}
+@media screen and (max-width: 1020px) { 
+	.random-song-name {
+		font-family: 'Pretendard-semiBold';
+		font-size: var(--chakra-fontSizes-2xl);
+	}
+}
+.random-artist-name {
+	font-family: 'Pretendard-ExtraLight';
+	font-size: var(--chakra-fontSizes-2xl);
+	display: flex;
+	-webkit-box-pack: justify;
+	place-content: center space-between;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: auto;
+	margin-top: var(--chakra-space-1);
+	word-break: break-word;
+}
+
+
+/****************************************       Main section     */
+.main-content {
+	display: flex; 
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin-left: var(--chakra-sizes-md);
+	--ytmusic-guide-width: var(--chakra-sizes-md);
+	--ytmusic-content-width: min( calc( 100vw - 200px - var(--ytmusic-guide-width) ), 1248px );
+}
+.main-list {
+    margin: var(--chakra-space-4) 0;
+}
+.main-list-header {
+	margin: 0 var(--chakra-space-2);
+}
+.content-group {
+	/* width: var(--ytmusic-content-width); */
+	margin: 0 auto;
+	font-size: 1.2rem;
+}
+.selector {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.title-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+/******************************     Search box     */
+.search-box {
+	display: flex;
+	position: relative;
+	margin: 0 var(--chakra-space-2);
+	max-width: 40%;
+}
+.search-icon {
+	left: 0px;
+	width: var(--chakra-sizes-10);
+	height: var(--chakra-sizes-10);
+	font-size: var(--chakra-fontSizes-md);
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	position: absolute;
+	top: 0px;
+	z-index: 2;
+	pointer-events: none;
+}
+.search-text {
+	width: 100%;
+	min-width: 0px;
+	outline: transparent solid 2px;
+	outline-offset: 2px;
+	position: relative;
+	appearance: none;
+	transition-property: var(--chakra-transition-property-common);
+	transition-duration: var(--chakra-transition-duration-normal);
+	font-size: var(--chakra-fontSizes-md);
+	padding-inline-start: var(--chakra-space-10);
+	padding-inline-end: var(--chakra-space-4);
+	height: var(--chakra-sizes-10);
+	border-radius: var(--chakra-radii-md);
+	border-width: 1px;
+	border-style: solid;
+	border-image: initial;
+	border-color: inherit;
+	background: inherit;
+}
+
+
+genre.genre-list {
+    width: 100%;
+}
+
+
+
+/****************************************       Main : Random        */
+/****************************************       Main : All           */
+
+
+
+
+.header-gruop {
+	display: flex; 
+	flex-direction: column;
+	align-items: flex-start;
+	color: white;
+	margin: 0 auto;
+	max-width: var(--ytmusic-content-width);
+}
+.main-list-title, .random-list-title {
+	font-size: var(--chakra-fontSizes-5xl);
+}
+@media screen and (max-width: 1020px) { 
+	.main-list-title, .random-list-title {
+		font-size: var(--chakra-fontSizes-4xl);
+	}
+}
+.music-list {
+	display: flex;
+    flex-flow: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 0px;
+    /* padding: var(--chakra-space-4); */
+    width: var(--ytmusic-content-width);
+    margin: 0 auto;
+}
+.song-div {
+	background: var(--item-background); 
+	color: white;
+	width: calc( ( var(--ytmusic-content-width) / 3) - 2 * 0.5rem );
+	margin: var(--chakra-space-2);
+	box-shadow: var(--chakra-shadows-sm);
+	border-radius: var( --chakra-radii-lg);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+@media screen and (max-width: 1020px) { 
+	.song-div {
+		width: calc( ( var(--ytmusic-content-width) - 12px) );
+	}
+}
+.album-cover-div {
+	position: relative; 
+	margin: var(--chakra-space-2);
+	width: var(--chakra-sizes-36);
+	height: var(--chakra-sizes-36);
+}
+@media screen and (max-width: 1020px) { 
+	.album-cover-div {
+		width: var(--chakra-sizes-24);
+		height: var(--chakra-sizes-24);
+	}
+}
+.album-cover-img {
+	border-radius: var( --chakra-radii-lg);
+	object-fit: cover;
+	overflow: hidden;
+	position: absolute;
+	/* width: var(--chakra-space-36);
+	height: var(--chakra-space-36); */
+	width: 100%;
+	height: 100%;
+}
+.info-div {
+	padding: var(--chakra-space-2);
+	width:  calc(100% - var(--chakra-sizes-36));
+}
+@media screen and (max-width: 1020px) { 
+	.info-div {
+		width:  calc(100% - var(--chakra-sizes-24));
+	}
+}
+.song-name {
+	font-family: 'Pretendard-semiBold';
+	font-size: var(--chakra-fontSizes-2xl);
+	letter-spacing: var(--chakra-letterSpacings-wide);
+	/*line-height: 1.5rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin: initial;*/
+	display: flex;
+	-webkit-box-pack: justify;
+	place-content: center space-between;
+	margin-top: var(--chakra-space-1);
+	min-height: 50%;
+	font-weight: var(--chakra-fontWeights-semibold);
+	word-break: break-word;
+}
+.artist-name{
+	font-family: 'Pretendard-ExtraLight';
+	font-size: var(--chakra-fontSizes-2xl);
+	display: flex;
+	-webkit-box-pack: justify;
+	place-content: center space-between;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: auto;
+	margin-top: var(--chakra-space-1);
+	word-break: break-word;
+}
+
+
+
+/* mobile */
+@media screen and (max-width: 1020px) {
+	.nav {
+		display: flex;
+		-webkit-box-align: center;
+		align-items: center;
+		-webkit-box-pack: justify;
+		justify-content: space-between;
+		margin-left: 0px;
+		padding-inline-start: var(--chakra-space-4);
+		padding-inline-end: var(--chakra-space-4);
+		height: var(--chakra-sizes-20);
+		background: rgb(0, 0, 0);
+		color: aliceblue;
+		border-bottom-width: 1px;
+		border-bottom-color: var(--chakra-colors-gray-200);
+		position: fixed;
+		top: 0;
+		z-index: 5;
+		width: 100%;
+	}
+	.main-content {
+		margin-left: 0; 
+		margin-top: var(--chakra-space-20) !important;
+		--ytmusic-guide-width: 0px;
+		--ytmusic-content-width: calc(100vw - 32px - var(--ytmusic-guide-width));
+	}
+}
+
+
+
+/*
+
+p {
+	color: red;
+}
+
+#my-id {
+	width: 500px;
+	border: 1px solid black;
+}
+
+.my-class {
+	color: blue;
+}
+*/
+
+
+/*
+요소:p 같은거 { 속성 : 속성값 ; }
+*/
