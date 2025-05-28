@@ -19,7 +19,7 @@
 
   <script>
     let myKey = "1i-sXORfTZXdWSDDFHvdBRd8ZyCDS7f8065af3Ou7Btg";
-    let noCover = "https://via.placeholder.com/40x40?text=No+Cover";
+    let noCover = "https://i.ytimg.com/vi/-Sp9Xyaa3Nk/maxresdefault.jpg";
     let musicbook = [];
 
     google.charts.load("current", { packages: ["corechart"] });
