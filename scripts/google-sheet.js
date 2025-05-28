@@ -4,7 +4,7 @@ var genre = document.querySelector('genre');
 var category = document.querySelector('category');
 var random = document.querySelector('random');
 
-let myKey = "1CWKXD_QAIRSmSvUQ6SInXp8M-T5Fw5yX0uQuGtkq8B0"; // 스프레드시트 KEY
+let myKey = "1i-sXORfTZXdWSDDFHvdBRd8ZyCDS7f8065af3Ou7Btg"; // 스프레드시트 KEY
 
 let noCover = `https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-Sp9Xyaa3Nk&psig=AOvVaw0crDJVd2MNQRtX8EhpTq4-&ust=1748440079222000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLi77Njkw40DFQAAAAAdAAAAABAE`;
 
